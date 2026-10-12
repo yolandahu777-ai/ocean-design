@@ -1,14 +1,13 @@
 # Ocean Design on GitHub Pages
 
-Status: deployment configuration is prepared. A GitHub repository and account connection are still required; the site is not yet published to GitHub Pages.
+Published to GitHub Pages on **2026-10-12**.
 
-## Initial publication
+- Website: [Ocean Design](https://yolandahu777-ai.github.io/ocean-design/)
+- Repository: [yolandahu777-ai/ocean-design](https://github.com/yolandahu777-ai/ocean-design)
 
-1. Create a GitHub repository for the portfolio. GitHub Free supports Pages from public repositories; eligible paid plans also support private source repositories.
-2. Connect this project directory to that repository and push the `main` branch.
-3. In the repository, open **Settings → Pages → Build and deployment → Source**, and select **GitHub Actions**.
-4. Run **Publish Ocean Design** from the Actions tab if it has not started successfully, then wait for the deployment to complete.
-5. Use the URL shown in the successful `github-pages` deployment. For a project repository, it normally follows `https://USERNAME.github.io/REPOSITORY/`.
+## Deployment configuration
+
+The **Publish Ocean Design** workflow in `.github/workflows/deploy-pages.yml` runs automatically when changes are pushed to `main`. It can also be started manually from the repository's Actions tab. GitHub Pages uses **GitHub Actions** as its build and deployment source.
 
 The workflow uploads only `dist/`. The local source map, old hosting settings and maintenance README are excluded from Git by the allowlist in `.gitignore`.
 
@@ -23,7 +22,7 @@ Edit the existing files in this same project:
 
 Preview the changes, then commit and push them to `main`. Each push runs the Pages workflow automatically. The published link stays the same while the account, repository name and domain remain the same. Local edits alone do not update the public site.
 
-After the initial connection is complete, updates from this directory can use:
+To publish future updates from this project directory:
 
 ```sh
 git add dist .github .gitignore DEPLOYMENT.md
