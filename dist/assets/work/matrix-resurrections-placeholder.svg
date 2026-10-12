@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-labelledby="title desc">
+  <title id="title">The Matrix Resurrections × SHEGLAM — visuals to follow</title>
+  <desc id="desc">A typographic placeholder in black and green, pending the original campaign artwork.</desc>
+  <rect width="1440" height="1080" fill="#101b15"/>
+  <g fill="none" stroke="#b6dfab" stroke-width="1" opacity=".18">
+    <path d="M72 300H1368M72 810H1368M1188 160V930M1220 160V930M1252 160V930M1284 160V930M1316 160V930M1348 160V930"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#d7edc8">
+    <text x="72" y="397" font-size="32" letter-spacing="6">THE</text>
+    <text x="63" y="558" font-size="180" letter-spacing="-9">MATRIX</text>
+    <text x="72" y="638" font-size="43" letter-spacing="6">RESURRECTIONS</text>
+    <text x="72" y="737" font-size="40" letter-spacing="3">× SHEGLAM</text>
+  </g>
+  <g font-family="monospace" font-size="24" fill="#b6c7b0">
+    <text x="72" y="929" letter-spacing="2">CAMPAIGN VISUALS TO FOLLOW</text>
+  </g>
+</svg>

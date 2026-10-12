@@ -55,16 +55,26 @@
       board.append(img);
     });
     button.append(board);
+    if(project.series)button.append(element('span','series-badge',project.series));
     if(project.layout==='film'){const badge=element('span','film-badge',`▶ AI FILM · ${project.duration}`);badge.setAttribute('aria-hidden','true');button.append(badge);}
     const action=element('span','project-action',project.layout==='film'?'Watch film ':'View project ');const plus=element('span',null,'+');plus.setAttribute('aria-hidden','true');action.append(plus);button.append(action);
     const meta=element('div','project-meta');const category=element('span','project-category',project.category);appendChinese(category,project.categoryZh);
-    const name=element('span',null,`${String(index+1).padStart(2,'0')} / ${project.name}`);appendChinese(name,project.nameZh);meta.append(name,category);
+    const name=element('span',null,`${String(index+1).padStart(2,'0')} / ${project.name}`);appendChinese(name,project.nameZh);
+    if(project.date){const date=element('time','project-date',project.year);date.dateTime=project.date;name.append(date);}
+    meta.append(name,category);
     item.append(button,meta);return item;
   }
   function renderGallery(){
     const gallery=$('#work-gallery');gallery.replaceChildren();
-    if(workProjects.length)gallery.append(createCard(workProjects[0],0,true));
-    const grid=element('div','case-grid');workProjects.slice(1).forEach((p,i)=>grid.append(createCard(p,i+1)));gallery.append(grid);
+    const collaborations=workProjects.filter(p=>p.series==='IP COLLABORATION');
+    if(collaborations.length){
+      const series=element('section','ip-series');series.setAttribute('aria-labelledby','ip-series-title');
+      const heading=element('h2','series-heading','IP Collaborations · 2024—2025');heading.id='ip-series-title';
+      const seriesGrid=element('div','ip-series-grid');collaborations.forEach((p,i)=>seriesGrid.append(createCard(p,workProjects.indexOf(p),i===0)));
+      series.append(heading,seriesGrid);gallery.append(series);
+    }
+    const remaining=workProjects.filter(p=>!collaborations.includes(p));
+    const grid=element('div','case-grid');remaining.forEach(p=>grid.append(createCard(p,workProjects.indexOf(p))));gallery.append(grid);
     $('#playground-projects').replaceChildren(...playProjects.map((p,i)=>createCard(p,i)));
     $('[data-work-count]').textContent=String(workProjects.length).padStart(2,'0');
   }
@@ -121,12 +131,34 @@
     }
     return section;
   }
+  function createCaseStudy(paragraphs){
+    const section=element('section','case-study');section.setAttribute('aria-label','Project story / 项目介绍');
+    paragraphs.forEach((paragraph,index)=>{
+      const row=element('section','case-study-row');const heading=element('h3','case-study-label',`${String(index+1).padStart(2,'0')} / ${paragraph.title}`);
+      heading.id=`case-story-${index}`;appendChinese(heading,paragraph.titleZh);row.setAttribute('aria-labelledby',heading.id);
+      const columns=element('div','case-study-columns');
+      [{key:'en',lang:'en'},{key:'zh',lang:'zh-CN'}].forEach(language=>{
+        const copy=element('p','case-study-copy');copy.lang=language.lang;
+        const text=paragraph[language.key];const highlights=paragraph.highlights?.[language.key]||[];let position=0;
+        while(position<text.length){
+          const match=highlights.map(value=>({value,index:text.indexOf(value,position)})).filter(item=>item.value&&item.index>=0).sort((a,b)=>a.index-b.index)[0];
+          if(!match){copy.append(document.createTextNode(text.slice(position)));break;}
+          copy.append(document.createTextNode(text.slice(position,match.index)),element('strong',null,match.value));position=match.index+match.value.length;
+        }
+        columns.append(copy);
+      });
+      row.append(heading,columns);section.append(row);
+    });
+    return section;
+  }
   function showProject(id){
     const p=projects.find(p=>p.id===id);if(!p)return;pauseMedia();activeProject=p;
     $('#detail-title').textContent=p.name;appendChinese($('#detail-title'),p.nameZh,'detail-title-zh');$('#detail-subtitle').textContent=p.subtitle;appendChinese($('#detail-subtitle'),p.subtitleZh,'detail-subtitle-zh');
-    const introduction=p.introduction||(p.descriptionZh?{label:'PROJECT OVERVIEW',labelZh:'项目介绍',paragraphs:[{en:p.description,zh:p.descriptionZh}]}:null);
-    $('.detail-info').classList.toggle('has-project-introduction',Boolean(introduction));
+    const introduction=p.caseStudy?null:(p.introduction||(p.descriptionZh?{label:'PROJECT OVERVIEW',labelZh:'项目介绍',paragraphs:[{en:p.description,zh:p.descriptionZh}]}:null));
+    $('.detail-info').classList.toggle('has-project-introduction',Boolean(introduction||p.caseStudy));
+    $('#project-dialog').classList.toggle('has-case-study',Boolean(p.caseStudy));
     const media=$('#detail-images');media.replaceChildren();const opening=createMediaGrid(p.images,p.imageLayout);
+    if(p.caseStudy)media.append(createCaseStudy(p.caseStudy));
     if(p.layout==='film'){
       const lead=element('div','film-lead');lead.append(opening);if(introduction)lead.append(createIntroduction(introduction));media.append(lead);
     }else{media.append(opening);if(introduction)media.append(createIntroduction(introduction));}

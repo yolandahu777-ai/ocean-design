@@ -102,6 +102,30 @@
 @media(max-width:600px){.case-section{margin-top:40px}.case-section-heading{padding:18px 0}.case-section-heading p{font-size:.875rem}.detail-figure figcaption{font-size:.75rem;line-height:1.4;padding-top:9px}.detail-media-grid.media-pair{grid-template-columns:1fr}.detail-media-grid.media-pair{gap:16px}}
 @media(max-width:600px){.card-hero{aspect-ratio:2.07}.card-hero .cover-artboard img{object-fit:contain!important;object-position:center!important}.intro-caption>span:first-child{max-width:160px}}
 
+/* A chronological series within the existing Selected Work gallery. */
+.ip-series{margin:6px 0 34px}
+.series-heading{margin:0 0 20px;padding-top:20px;border-top:1px solid var(--line);font:400 .9375rem/1.5 var(--mono);letter-spacing:-.025em}
+.ip-series-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.ip-series-grid .gallery-item{min-width:0}
+.ip-series-grid .project-card{aspect-ratio:4/3}
+.ip-series-grid .project-meta{display:block;padding-bottom:18px}
+.ip-series-grid .project-meta>span:first-child{display:block;font-size:.875rem;line-height:1.55}
+.ip-series-grid .project-category{display:block;text-align:left;margin-top:12px;font-size:.75rem;font-weight:400}
+.project-date{display:block;margin-top:8px;font:400 .75rem/1.5 var(--mono);color:var(--muted)}
+.series-badge{position:absolute;top:14px;left:14px;padding:8px 10px;background:var(--paper);color:var(--ink);border-radius:2px;font:10px/1.2 var(--mono);letter-spacing:.035em}
+.ip-series-grid .project-action{right:14px;bottom:14px;padding:10px 12px;gap:20px;font-size:.75rem}
+.case-study{margin:8px 0 56px;border-top:1px solid var(--line)}
+.case-study-row{display:grid;grid-template-columns:minmax(120px,.42fr) minmax(0,2fr);gap:clamp(24px,4vw,64px);padding:28px 0;border-bottom:1px solid var(--line)}
+.case-study-label{margin:0;font:400 .8125rem/1.6 var(--mono);color:var(--muted)}
+.case-study-label .translation-zh{font-size:.875rem;margin-top:8px}
+.case-study-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,4vw,64px)}
+.case-study-copy{margin:0;font-size:1rem;line-height:1.75;color:#42423e}
+.case-study-copy:lang(zh-CN){font-size:.9375rem;line-height:1.95;color:#373733}
+.case-study-copy strong{font-weight:600;color:var(--ink)}
+.has-case-study .detail-heading h2{font-size:clamp(2.6rem,5.5vw,5.5rem);line-height:1.04;max-width:72%}
+@media(max-width:850px){.ip-series-grid{gap:12px}.series-badge{top:10px;left:10px;padding:7px 8px;font-size:9px}.case-study-row{grid-template-columns:1fr;gap:18px}.case-study-label .translation-zh{display:inline;margin-left:12px}.has-case-study .detail-heading h2{max-width:66%}}
+@media(max-width:700px){.ip-series-grid{grid-template-columns:1fr;gap:14px}.ip-series-grid .project-card{aspect-ratio:1.6}.ip-series-grid .project-meta{padding-bottom:16px}.series-heading{font-size:.8125rem;margin-bottom:16px}.series-badge{font-size:10px}.case-study{margin-bottom:36px}.case-study-columns{grid-template-columns:1fr;gap:18px}.case-study-copy{font-size:.9375rem}.case-study-copy:lang(zh-CN){font-size:.9375rem}.has-case-study .detail-heading{display:block}.has-case-study .detail-heading h2{max-width:100%;font-size:clamp(2.25rem,10vw,3.6rem)}.has-case-study .detail-heading p{max-width:100%;margin-top:22px}}
+
 /* Bilingual biography and resume. */
 .about-dialog{max-width:1280px;padding:0;overflow:auto;--muted:#b6b6ae}
 .about-dialog :lang(zh-CN){font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;font-weight:400;letter-spacing:0;line-break:strict;word-break:normal}

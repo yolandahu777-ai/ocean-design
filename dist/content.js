@@ -65,6 +65,10 @@ window.portfolioContent = {
             "zh": "负责 SHEGLAM 美妆、SHEGLAM HAIR 护发及电器、Slow Sunday 护肤产品视觉，完成商品详情页、首页 KV、Banner、ICON 及营销专题设计。"
           },
           {
+            "en": "IP collaboration design: Led launch visuals for Harley Quinn × SHEGLAM (Nov 2024), Adventure Time × SHEGLAM (Feb 2025), and The Matrix Resurrections × SHEGLAM (Jul 2025, in collaboration with Warner Bros.), covering key visuals, product detail pages, social assets, banners and EDM. The official Instagram launch posts received 145K, 148K and 55K likes respectively; the Matrix collection was featured by Billboard’s official website. Developed an IP-to-beauty visual translation methodology and refined it across all three projects.",
+            "zh": "IP 联名设计：先后负责 Harley Quinn × SHEGLAM（2024.11）、Adventure Time × SHEGLAM（2025.02）、The Matrix Resurrections × SHEGLAM（2025.07，与 Warner Bros. 合作）三个联名系列新品首发视觉，覆盖 KV、商详、社媒图、banner 及 EDM；官方 IG 首发帖分别获 14.5 万、14.8 万、5.5 万点赞，其中 Matrix 系列获 Billboard 官网专题推荐；沉淀 IP 联名视觉转译方法并在三个项目中迭代复用。"
+          },
+          {
             "en": "Adapted visual assets for the SHEIN app and desktop site, the SHEGLAM website, Amazon, Shopee, Instagram and TikTok, balancing brand consistency, platform specifications and online and offline collateral needs.",
             "zh": "面向 SHEIN App 及 PC 端、SHEGLAM 独立站、Amazon、Shopee、Instagram、TikTok 等平台输出视觉，兼顾品牌调性、平台规范与线上线下物料需求。"
           },
@@ -164,14 +168,202 @@ window.portfolioContent = {
   },
   projects: [
     {
-      id:'adventure-time', name:'Adventure Time', client:'SHEGLAM', section:'work',
-      subtitle:'A playful world of character-led beauty.', category:'Product storytelling', discipline:'Product page design, campaign visuals',
-      subtitleZh:'以角色故事，构建趣味美妆世界。', categoryZh:'产品视觉叙事', disciplineZh:'产品详情页设计、活动视觉',
-      cover:['assets/work/adventure-time-cover-1.webp'], coverBackground:'#9bd7de', coverFit:'cover', coverPosition:'center',
-      images:[{src:'assets/work/page-03.webp',alt:'SHEGLAM Adventure Time collection: complete product detail design, product features, tutorials and character-inspired visuals'}],
-      description:'A playful, colorful product detail page for SHEGLAM’s Adventure Time makeup collection. Character-inspired packaging, product features and tutorials come together in a modular visual story for beauty fans.',
-      descriptionZh:'为 SHEGLAM 的 Adventure Time 彩妆系列设计的产品详情页。围绕角色展开的包装、产品特点与使用教程，通过模块化编排串联成鲜明而有趣的视觉故事。',
-      sourcePages:[3]
+      "id": "harley-quinn",
+      "name": "Harley Quinn × SHEGLAM",
+      "client": "SHEGLAM",
+      "section": "work",
+      "series": "IP COLLABORATION",
+      "year": "2024.11",
+      "date": "2024-11",
+      "subtitle": "Translating a rebellious icon into beauty.",
+      "subtitleZh": "将不羁的角色美学，转译为美妆视觉。",
+      "category": "IP collaboration",
+      "categoryZh": "IP 联名设计",
+      "discipline": "Key visual, product detail pages, social assets, banners",
+      "disciplineZh": "KV、商品详情页、社媒图、banner",
+      "cover": [
+        "assets/work/harley-quinn-cover-1.webp"
+      ],
+      "coverBackground": "#1a1418",
+      "coverFit": "contain",
+      "images": [
+        {
+          "src": "assets/work/page-04.webp",
+          "alt": "SHEGLAM Harley Quinn collection product detail layouts with comic-inspired packaging, makeup tutorials and character visuals"
+        }
+      ],
+      "description": "Launch visuals for the SHEGLAM × DC Harley Quinn makeup collaboration, translating a bold character aesthetic into a cohesive beauty campaign.",
+      "descriptionZh": "为 SHEGLAM × DC 哈莉·奎茵联名彩妆新品首发打造视觉，将鲜明的角色美学转译为统一的美妆宣传表达。",
+      "caseStudy": [
+        {
+          "title": "Context",
+          "titleZh": "背景",
+          "en": "Launch visuals for the SHEGLAM × DC Harley Quinn makeup collaboration. Challenge: translating Harley Quinn’s unhinged, high-recognition aesthetic into beauty visuals bold yet accessible to mass consumers.",
+          "zh": "SHEGLAM × DC 哈莉·奎茵联名彩妆新品首发。挑战：哈莉·奎茵的“疯批美学”辨识度极高但风格强烈，如何转译为大众可接受、又不失角色张力的美妆视觉。"
+        },
+        {
+          "title": "My Role",
+          "titleZh": "职责",
+          "en": "Owned launch visuals — key visual, product detail pages, social assets and banners.",
+          "zh": "负责新品首发视觉——KV、商品详情页、社媒图、banner。"
+        },
+        {
+          "title": "Process",
+          "titleZh": "过程",
+          "en": "Distilled her signature red-blue clash, clown motifs and rebellious energy into a visual keyword library; reinterpreted through SHEGLAM’s brand lens instead of directly applying character graphics; adapted one asset system for Instagram seeding, e-commerce detail pages and on-site banners.",
+          "zh": "提取角色标志性的红蓝撞色、小丑元素与不羁气质，建立视觉关键词库；以 SHEGLAM 品牌调性为基底做风格化转译，而非简单贴图；同一资产按 Instagram 种草、电商详情承接、站内 banner 引流分别输出。"
+        },
+        {
+          "title": "Results",
+          "titleZh": "成果",
+          "en": "145K likes on the official Instagram launch post; the “strong-IP translation methodology” became the starting point for the next two collaborations.",
+          "zh": "官方 Instagram 首发帖获 14.5 万点赞；沉淀的“强风格 IP 转译方法”成为后续两个联名项目的起点。",
+          "highlights": {
+            "en": [
+              "145K likes"
+            ],
+            "zh": [
+              "14.5 万点赞"
+            ]
+          }
+        }
+      ],
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "id": "adventure-time",
+      "name": "Adventure Time × SHEGLAM",
+      "client": "SHEGLAM",
+      "section": "work",
+      "series": "IP COLLABORATION",
+      "year": "2025.02",
+      "date": "2025-02",
+      "subtitle": "A playful IP, reimagined for beauty.",
+      "subtitleZh": "以插画语言，将童趣 IP 融入美妆视觉。",
+      "category": "IP collaboration",
+      "categoryZh": "IP 联名设计",
+      "discipline": "Key visual, product detail pages, social assets, banners",
+      "disciplineZh": "KV、商品详情页、社媒图、banner",
+      "cover": [
+        "assets/work/adventure-time-cover-1.webp"
+      ],
+      "coverBackground": "#9bd7de",
+      "coverFit": "cover",
+      "coverPosition": "center",
+      "images": [
+        {
+          "src": "assets/work/page-03.webp",
+          "alt": "SHEGLAM Adventure Time collection: complete product detail design, product features, tutorials and character-inspired visuals"
+        }
+      ],
+      "description": "Launch visuals for SHEGLAM × Adventure Time, bringing the IP’s playful illustration language into a consistent beauty campaign across five platforms.",
+      "descriptionZh": "为 SHEGLAM ×《探险活宝》系列打造新品首发视觉，以插画转译动画 IP 的童趣语言，建立跨五个平台的统一美妆表达。",
+      "caseStudy": [
+        {
+          "title": "Context",
+          "titleZh": "背景",
+          "en": "Launch visuals for the SHEGLAM × Adventure Time collection. Challenge: turning the IP’s playful cartoon language into elevated beauty visuals for young women — consistent across SHEIN App, DTC site, Amazon, Instagram and TikTok.",
+          "zh": "SHEGLAM ×《探险活宝》联名系列新品首发。挑战：动画 IP 的童趣语言如何转化为符合年轻女性审美的高级感美妆视觉，并在 SHEIN App、独立站、Amazon、Instagram、TikTok 多平台保持统一表达。"
+        },
+        {
+          "title": "My Role",
+          "titleZh": "职责",
+          "en": "Owned launch visuals — key visual, product detail pages, social assets and banners.",
+          "zh": "负责新品首发视觉——KV、商品详情页、社媒图、banner。"
+        },
+        {
+          "title": "Process",
+          "titleZh": "过程",
+          "en": "Extracted the candy palette, character silhouettes and line language; applied the IP-translation methodology from the Harley Quinn project, weaving the IP into product visuals through illustration; tailored outputs per platform, including Amazon’s white-background imagery, vertical assets for TikTok and Instagram, and an immersive campaign page for the DTC site.",
+          "zh": "提取探险活宝的糖果色系、角色剪影与线条语言；复用 Harley Quinn 项目沉淀的 IP 转译方法，以插画语言将 IP 融入产品视觉；按各平台规范（Amazon 白底、TikTok/IG 竖屏、独立站沉浸式专题）分别输出。"
+        },
+        {
+          "title": "Results",
+          "titleZh": "成果",
+          "en": "148K likes on the official Instagram launch post — the highest social engagement of the three collaborations.",
+          "zh": "官方 Instagram 首发帖获 14.8 万点赞，为三个联名项目中社媒反响最高的一次。",
+          "highlights": {
+            "en": [
+              "148K likes"
+            ],
+            "zh": [
+              "14.8 万点赞"
+            ]
+          }
+        }
+      ],
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "id": "matrix-resurrections",
+      "name": "The Matrix Resurrections × SHEGLAM",
+      "client": "SHEGLAM × Warner Bros.",
+      "section": "work",
+      "series": "IP COLLABORATION",
+      "year": "2025.07",
+      "date": "2025-07",
+      "subtitle": "A dark-tech world, one complete campaign.",
+      "subtitleZh": "以暗黑科技美学，串联完整上新 campaign。",
+      "category": "IP collaboration",
+      "categoryZh": "IP 联名设计",
+      "discipline": "Key visual, product detail pages, social assets, banners, EDM emails",
+      "disciplineZh": "KV、商品详情页、社媒图、banner、EDM 邮件",
+      "cover": [
+        "assets/work/matrix-resurrections-placeholder.svg"
+      ],
+      "coverBackground": "#09130d",
+      "coverFit": "cover",
+      "coverPosition": "center",
+      "images": [
+        {
+          "src": "assets/work/matrix-resurrections-placeholder.svg",
+          "alt": "The Matrix Resurrections × SHEGLAM project placeholder; final campaign imagery to be added",
+          "caption": "Placeholder visual / Campaign imagery to follow",
+          "captionZh": "占位视觉 / 正式项目图片待补充"
+        }
+      ],
+      "description": "A complete launch campaign for SHEGLAM × Warner Bros.’ The Matrix Resurrections collection, extending the IP’s dark-tech aesthetic from social content to commerce and EDM.",
+      "descriptionZh": "为 SHEGLAM 与 Warner Bros. 合作的《黑客帝国：矩阵重生》系列打造完整上新 campaign，将暗黑科技美学延展至社媒、电商与 EDM。",
+      "caseStudy": [
+        {
+          "title": "Context",
+          "titleZh": "背景",
+          "en": "SHEGLAM × Warner Bros. collaboration for The Matrix Resurrections — the largest of the three IP projects, covering a full launch campaign.",
+          "zh": "SHEGLAM 与 Warner Bros. 合作推出《黑客帝国：矩阵重生》联名系列。三个联名中规模最大的一次——新品首发 campaign 全套视觉。"
+        },
+        {
+          "title": "My Role",
+          "titleZh": "职责",
+          "en": "Owned the entire campaign visual system — key visual, product detail pages, social assets, banners and EDM emails.",
+          "zh": "负责 campaign 全套视觉——KV、商品详情页、社媒图、banner、EDM 邮件。"
+        },
+        {
+          "title": "Process",
+          "titleZh": "过程",
+          "en": "Applied the IP-translation methodology refined across the previous two collaborations to the franchise’s dark tech aesthetic (shades, green code rain, red/blue pill motifs); brought EDM into the unified visual system for the first time, ensuring full-funnel consistency from seeding to conversion.",
+          "zh": "沿用前两个项目沉淀的 IP 转译方法论，将《黑客帝国》的暗黑科技美学（墨镜、绿色代码雨、红蓝药丸意象）转译为美妆视觉；首次把 EDM 邮件纳入统一视觉体系，保证从种草到转化的全链路一致。"
+        },
+        {
+          "title": "Results",
+          "titleZh": "成果",
+          "en": "55K likes on the official Instagram launch post; the collection was featured by Billboard’s official website.",
+          "zh": "官方 Instagram 首发帖获 5.5 万点赞；系列获 Billboard 官网专题推荐。",
+          "highlights": {
+            "en": [
+              "55K likes",
+              "featured by Billboard’s official website"
+            ],
+            "zh": [
+              "5.5 万点赞",
+              "Billboard 官网专题推荐"
+            ]
+          }
+        }
+      ]
     },
     {
       id:'ntr8', name:'NTR8', client:'NTR8 / Brand concept', section:'work',
@@ -223,16 +415,6 @@ window.portfolioContent = {
       ],
       description:'NTR8 is a superfood brand concept exploring everyday nutrition. Named for Nutrition × Elevate, it translates four daily moments into a cohesive system of color, packaging and product imagery.',
       descriptionZh:'NTR8 是一项围绕日常营养补给展开的超级食物品牌概念设计。名称源于 Nutrition × Elevate，以四种日常状态为线索，建立统一的色彩、包装与产品视觉系统。'
-    },
-    {
-      id:'harley-quinn', name:'Harley Quinn', client:'SHEGLAM', section:'work',
-      subtitle:'Comic-book energy, translated into beauty.', category:'Collection launch', discipline:'Product page design, campaign visuals',
-      subtitleZh:'将漫画的张力，转译为美妆视觉。', categoryZh:'系列上新', disciplineZh:'产品详情页设计、活动视觉',
-      cover:['assets/work/harley-quinn-cover-1.webp'], coverBackground:'#1a1418', coverFit:'contain',
-      images:[{src:'assets/work/page-04.webp',alt:'SHEGLAM Harley Quinn collection product detail layouts with comic-inspired packaging, makeup tutorials and character visuals'}],
-      description:'A bold, comic-inspired product detail page for SHEGLAM’s Harley Quinn collection. Vibrant packaging, playful tutorials and strong character visuals bring the collection to life for makeup lovers and DC fans.',
-      descriptionZh:'为 SHEGLAM 的 Harley Quinn 系列设计的产品详情页，以漫画语言呈现大胆鲜明的视觉风格。活泼的包装、趣味教程与角色形象共同展开系列故事，连接彩妆爱好者与 DC 角色受众。',
-      sourcePages:[4]
     },
     {
       id:'jd-marketing', name:'JD · Marketing Design', nameZh:'京东秒送 · 营销设计', client:'JD Miaosong', clientZh:'京东秒送', section:'work', year:'2026',
