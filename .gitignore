@@ -1,0 +1,12 @@
+# Publish only website files and deployment configuration.
+/*
+!/dist/
+!/.github/
+!/.gitignore
+!/DEPLOYMENT.md
+
+# Local operating-system files, credentials and build caches.
+**/.DS_Store
+**/.env
+**/.env.*
+**/node_modules/
