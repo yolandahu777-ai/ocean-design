@@ -27,9 +27,10 @@
     const img=element('img');img.src=logo.src;img.alt='';img.width=56;img.height=56;img.decoding='async';
     frame.append(img);return frame;
   }
-  function profileHeading(english,chinese,logo){
-    const identity=element('div','resume-identity');const title=element('h4');setProfileText(title,english,chinese);
-    if(logo)identity.append(profileLogo(logo));identity.append(title);return identity;
+  function profileHeading(english,chinese,logo,note){
+    const identity=element('div','resume-identity'+(note?' has-company-note':''));const title=element('h4');setProfileText(title,english,chinese);
+    const copy=element('div','resume-identity-copy');copy.append(title);if(note)copy.append(profileParagraph(note,'resume-company-note'));
+    if(logo)identity.append(profileLogo(logo));identity.append(copy);return identity;
   }
   function renderProfile(){
     const profile=content.profile;
@@ -44,7 +45,7 @@
       link.append(label,element('span','profile-contact-value',contact.value));contacts.append(link);
     });
     $('#profile-experience').replaceChildren(...profile.experience.map(job=>{
-      const entry=element('article','resume-entry');const header=element('header','resume-entry-heading');const title=profileHeading(job.company,job.companyZh,job.logo);
+      const entry=element('article','resume-entry');const header=element('header','resume-entry-heading');const title=profileHeading(job.company,job.companyZh,job.logo,job.companyNote);
       const period=element('p','resume-period');setProfileText(period,job.period,job.periodZh);
       header.append(title,period);const role=element('p','resume-role');setProfileText(role,job.role,job.roleZh);
       const points=element('ul','resume-points');job.points.forEach(point=>{const li=element('li');li.append(profileParagraph(point));points.append(li);});

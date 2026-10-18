@@ -131,6 +131,12 @@ body{background:var(--paper)}
 }
 /* Biography: compact location and grouped skill descriptions. */
 .resume-identity{display:flex;align-items:center;gap:16px;min-width:0}
+.resume-identity-copy{min-width:0;flex:1}
+.resume-identity.has-company-note{align-items:flex-start}
+.has-company-note .resume-logo{margin-top:2px}
+.resume-company-note{margin-top:6px}
+.resume-company-note p.profile-primary{font-size:13px;line-height:1.65;margin:0;color:#e0dbee}
+.resume-company-note p.profile-secondary{font-size:11px;line-height:1.65;margin:3px 0 0}
 .resume-logo{display:flex;align-items:center;justify-content:center;flex:0 0 56px;width:56px;height:56px;overflow:hidden;border-radius:12px;background:#fff;box-shadow:0 0 0 1px #ffffff14}
 .resume-logo img{display:block;width:100%;height:100%;object-fit:contain}
 .resume-logo.logo-seal img{width:46px;height:46px}
