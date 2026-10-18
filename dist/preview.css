@@ -129,3 +129,7 @@ body{background:var(--paper)}
   .resume-copy p.profile-secondary{font-size:12px;line-height:1.8}
   .about-top .close-button{gap:8px}
 }
+/* Bilingual homepage introduction: preserve the English display headline. */
+.intro-headline-zh{margin:18px 0 0;font:500 22px/1.6 "PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;letter-spacing:.06em;color:var(--ink)}
+.intro-expertise-zh{display:block;margin-top:7px;font:400 13px/1.7 "PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;letter-spacing:0;color:var(--ink);text-wrap:balance}
+@media(max-width:700px){.intro-headline-zh{margin-top:15px;font-size:16px;letter-spacing:.035em}.intro-caption>span:first-child{max-width:210px}.intro-expertise-zh{font-size:12px;line-height:1.65;margin-top:6px}}

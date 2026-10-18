@@ -9,7 +9,9 @@ window.portfolioContent = {
       "Visual stories.",
       "Digital experiences."
     ],
+    "headlineZh": "视觉叙事，数字体验。",
     "expertise": "Digital design, campaigns & print.",
+    "expertiseZh": "数字设计、营销视觉与印刷设计。",
     "nameZh": "胡海洋",
     "role": {
       "en": "Senior Visual Designer / Marketing Design / AI Content Creation",

@@ -48,7 +48,7 @@
     $('#profile-tools').textContent=profile.tools.join(' · ');
     $('#profile-additional').replaceChildren(...profile.additional.map(item=>{const li=element('li');li.append(profileParagraph(item));return li;}));
   }
-  function setHeadline(lines){$('.intro h1').replaceChildren();lines.forEach((line,i)=>{if(i)$('.intro h1').append(document.createElement('br'));$('.intro h1').append(document.createTextNode(line));});}
+  function setHeadline(lines,chinese=content.profile.headlineZh){$('.intro h1').replaceChildren();lines.forEach((line,i)=>{if(i)$('.intro h1').append(document.createElement('br'));$('.intro h1').append(document.createTextNode(line));});$('#intro-headline-zh').textContent=chinese||'';}
   function createCard(project,index,hero=false){
     const item=element('div','gallery-item');
     const button=element('button','project-card'+(hero?' card-hero':' case-card'));
@@ -191,7 +191,7 @@
     const play=view==='playground';
     document.querySelectorAll('[data-view]').forEach(t=>{const selected=t.dataset.view===view;t.classList.toggle('active',selected);t.setAttribute('aria-pressed',String(selected));});
     $('#work-gallery').hidden=play;$('#playground-gallery').hidden=!play;
-    setHeadline(play?['Images & ideas.','Room to explore.']:content.profile.headline);
+    setHeadline(play?['Images & ideas.','Room to explore.']:content.profile.headline,play?'图像与灵感，自由探索。':content.profile.headlineZh);
     $('.edition').replaceChildren(document.createTextNode(play?'PLAYGROUND':'SELECTED WORK'),document.createElement('br'),document.createTextNode(play?'BRAND / IMAGE STUDIES':content.profile.designer.toUpperCase()));
     window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
   }
@@ -208,7 +208,8 @@
   });
   $('.wordmark').addEventListener('click',e=>{e.preventDefault();setView('work');});
   $('#back-top').addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));
-  $('.intro-caption > span:first-child').textContent=content.profile.expertise;
+  $('#intro-expertise-en').textContent=content.profile.expertise;
+  $('#intro-expertise-zh').textContent=content.profile.expertiseZh;
   renderProfile();
   $('[data-year]').textContent=String(new Date().getFullYear());
   renderGallery();setHeadline(content.profile.headline);
