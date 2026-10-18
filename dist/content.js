@@ -341,17 +341,17 @@ window.portfolioContent = {
       "discipline": "Key visual, product detail pages, social assets, banners, EDM emails",
       "disciplineZh": "KV、商品详情页、社媒图、banner、EDM 邮件",
       "cover": [
-        "assets/work/matrix-resurrections-placeholder.svg"
+        "assets/matrix/storefront-banner.webp"
       ],
-      "coverBackground": "#09130d",
-      "coverFit": "cover",
+      "coverBackground": "#04120c",
+      "coverFit": "contain",
       "coverPosition": "center",
       "images": [
         {
-          "src": "assets/work/matrix-resurrections-placeholder.svg",
-          "alt": "The Matrix Resurrections × SHEGLAM project placeholder; final campaign imagery to be added",
-          "caption": "Placeholder visual / Campaign imagery to follow",
-          "captionZh": "占位视觉 / 正式项目图片待补充"
+          "src": "assets/matrix/storefront-banner.webp",
+          "alt": "The Matrix Resurrections × SHEGLAM collection with green code rain, silver packaging and red-blue lip balms",
+          "caption": "The collection / Campaign visual",
+          "captionZh": "系列总览 / 联名宣传视觉"
         }
       ],
       "description": "A complete launch campaign for SHEGLAM × Warner Bros.’ The Matrix Resurrections collection, extending the IP’s dark-tech aesthetic from social content to commerce and EDM.",
@@ -391,8 +391,110 @@ window.portfolioContent = {
             ]
           }
         }
+      ],
+      "sections": [
+        {
+          "title": "01 / The Prophecy Palette",
+          "titleZh": "预言眼影盘 · 主视觉与色彩卖点",
+          "description": "Green code, metallic finishes and the red-blue choice carry the IP into product storytelling.",
+          "descriptionZh": "以绿色代码、金属质感与红蓝选择意象，将 IP 语言融入产品叙事。",
+          "layout": "pair",
+          "items": [
+            {
+              "src": "assets/matrix/eyeshadow-visual.webp",
+              "alt": "The Prophecy Palette presented in a green Matrix-inspired environment",
+              "caption": "Product visual / The Prophecy Palette",
+              "captionZh": "产品主视觉 / 预言眼影盘"
+            },
+            {
+              "src": "assets/matrix/eyeshadow-details.webp",
+              "alt": "Eight eyeshadow shades and red-blue pill motifs in the product detail layout",
+              "caption": "Product details / Eight sci-fi shades",
+              "captionZh": "商品详情 / 八色科幻色彩"
+            }
+          ]
+        },
+        {
+          "title": "02 / Two-Tone Blush",
+          "titleZh": "翻盖腮红 · 造型与功能表达",
+          "description": "The flip-phone silhouette connects the story world with the product’s everyday functions.",
+          "descriptionZh": "以翻盖手机造型连接 IP 世界观与产品功能，清晰展示双色、镜面及配套刷具。",
+          "layout": "pair",
+          "items": [
+            {
+              "src": "assets/matrix/blush-visual.webp",
+              "alt": "Two-tone blush styled as a metallic flip phone",
+              "caption": "Product visual / Two-tone blush",
+              "captionZh": "产品主视觉 / 双色腮红"
+            },
+            {
+              "src": "assets/matrix/blush-details.webp",
+              "alt": "Flip-phone blush with two colors, mirror and brush shown in the detail layout",
+              "caption": "Product details / Form and function",
+              "captionZh": "商品详情 / 造型与功能"
+            }
+          ]
+        },
+        {
+          "title": "03 / The Red-Blue Choice",
+          "titleZh": "红蓝药丸润唇膏 · IP 符号与产品卖点",
+          "description": "A familiar cinematic symbol becomes the focus of the product visual and benefit-led layout.",
+          "descriptionZh": "将电影中的红蓝药丸符号作为视觉焦点，以主图与卖点图承接产品信息。",
+          "layout": "pair",
+          "items": [
+            {
+              "src": "assets/matrix/lip-balm-visual.webp",
+              "alt": "Red and blue lip balms held by a metallic robotic hand",
+              "caption": "Product visual / Red and blue lip balms",
+              "captionZh": "产品主视觉 / 红蓝药丸润唇膏"
+            },
+            {
+              "src": "assets/matrix/lip-balm-details.webp",
+              "alt": "Red-blue lip balms with ingredient and benefit information",
+              "caption": "Product details / Formula and benefits",
+              "captionZh": "商品详情 / 配方与卖点"
+            }
+          ]
+        },
+        {
+          "title": "04 / Launch Email",
+          "titleZh": "EDM 邮件 · 从主视觉到行动入口",
+          "description": "The campaign language extends through the email, from the hero image to product discovery and the shopping call to action.",
+          "descriptionZh": "将系列视觉延伸至完整邮件，从首屏形象、产品探索到购买入口保持统一表达。",
+          "layout": "portrait",
+          "items": [
+            {
+              "src": "assets/matrix/launch-email.webp",
+              "alt": "Full SHEGLAM Matrix launch email with model, collection and shopping links",
+              "caption": "EDM / Complete launch email",
+              "captionZh": "EDM / 完整首发邮件"
+            }
+          ]
+        },
+        {
+          "title": "05 / Online Storefront",
+          "titleZh": "独立站海报 · 统一视觉的版式延展",
+          "description": "Portrait campaign formats adapt the same collection imagery for different storefront placements.",
+          "descriptionZh": "围绕同一组系列视觉，调整构图、文案层级与留白，适配独立站不同展示位置。",
+          "layout": "pair",
+          "items": [
+            {
+              "src": "assets/matrix/storefront-collection.webp",
+              "alt": "Portrait Matrix collection poster with green code and silver gift box",
+              "caption": "DTC storefront / Collection poster",
+              "captionZh": "独立站 / 系列海报"
+            },
+            {
+              "src": "assets/matrix/storefront-bestsellers.webp",
+              "alt": "Light-green framed Matrix storefront poster with the complete collection",
+              "caption": "DTC storefront / Promotional poster",
+              "captionZh": "独立站 / 宣传海报"
+            }
+          ]
+        }
       ]
     },
+
     {
       id:'ntr8', name:'NTR8', client:'NTR8 / Brand concept', section:'work',
       subtitle:'A colorful identity for everyday nutrition.', subtitleZh:'以色彩呈现日常补给。', category:'Brand & packaging', discipline:'Brand identity, packaging, campaign imagery, motion',
