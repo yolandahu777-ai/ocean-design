@@ -428,8 +428,7 @@ window.portfolioContent = {
           {src:'assets/ntr8/night-reset-campaign.webp',alt:'Night Reset campaign visual with a floating purple tub and berries'},
           {src:'assets/ntr8/morning-boost-campaign.webp',alt:'Morning Boost campaign visual with a floating yellow tub and citrus'}
         ]},
-        {title:'Made to move',titleZh:'让画面动起来',description:'Two motion explorations bring the product worlds to life.',descriptionZh:'两支动态影像实验，以运动与节奏呈现各具特色的产品场景。',layout:'pair',items:[
-          {type:'video',src:'assets/ntr8/night-reset-film.mp4',poster:'assets/ntr8/night-reset-campaign.webp',alt:'Night Reset motion study',caption:'Night Reset / 12 sec',captionZh:'夜间放松 / 12 秒',width:1288,height:1610},
+        {title:'Made to move',titleZh:'让画面动起来',description:'A motion study brings Pink Glow’s vibrant product world to life.',descriptionZh:'以动态影像呈现 Pink Glow 的焕采场景，延续明亮鲜活的色彩语言。',layout:'portrait',items:[
           {type:'video',src:'assets/ntr8/pink-glow-film.mp4',poster:'assets/ntr8/pink-glow-campaign.webp',alt:'Pink Glow campaign film',caption:'Pink Glow / 15 sec',captionZh:'焕采时刻 / 15 秒',width:1248,height:1664}
         ]}
       ],
