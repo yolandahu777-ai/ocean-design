@@ -10,33 +10,41 @@
   const element=(tag,className,text)=>{const el=document.createElement(tag);if(className)el.className=className;if(text!==undefined)el.textContent=text;return el;};
   function appendChinese(parent,text,className='translation-zh'){if(!text)return;const translation=element('span',className,text);translation.lang='zh-CN';parent.append(translation);}
   function setBilingualText(target,english,chinese){target.textContent=english||'';appendChinese(target,chinese);}
+  function setProfileText(target,english,chinese){
+    target.replaceChildren();
+    const primary=element('span','profile-primary',chinese||english||'');primary.lang=chinese?'zh-CN':'en';target.append(primary);
+    if(english&&chinese&&english!==chinese){const secondary=element('span','profile-secondary',english);secondary.lang='en';target.append(secondary);}
+  }
   function profileParagraph(copy,className='resume-copy'){
-    const block=element('div',className);const en=element('p',null,copy.en);en.lang='en';const zh=element('p',null,copy.zh);zh.lang='zh-CN';block.append(en,zh);return block;
+    const block=element('div',className);
+    if(copy.zh){const zh=element('p','profile-primary',copy.zh);zh.lang='zh-CN';block.append(zh);}
+    if(copy.en&&copy.en!==copy.zh){const en=element('p',copy.zh?'profile-secondary':'profile-primary',copy.en);en.lang='en';block.append(en);}
+    return block;
   }
   function renderProfile(){
     const profile=content.profile;
     setBilingualText($('#about-title'),profile.designer,profile.nameZh);
-    setBilingualText($('#profile-role'),profile.role.en,profile.role.zh);
+    setProfileText($('#profile-role'),profile.role.en,profile.role.zh);
     $('#profile-summary').replaceChildren(profileParagraph(profile.summary,'profile-summary-copy'));
     const contacts=$('#profile-contacts');contacts.replaceChildren();
     [{label:'Email',labelZh:'邮箱',value:profile.contacts.email,href:`mailto:${profile.contacts.email}`},{label:'Phone',labelZh:'电话',value:profile.contacts.phone,href:`tel:${profile.contacts.phone}`}].forEach(contact=>{
       const link=element('a','profile-contact');link.href=contact.href;
-      const label=element('span','profile-contact-label',`${contact.label} / `);const zh=element('span',null,contact.labelZh);zh.lang='zh-CN';label.append(zh);
+      const label=element('span','profile-contact-label');const zh=element('span','profile-primary',contact.labelZh);zh.lang='zh-CN';const en=element('span','profile-secondary',contact.label);en.lang='en';label.append(zh,document.createTextNode(' / '),en);
       link.append(label,element('span','profile-contact-value',contact.value));contacts.append(link);
     });
     $('#profile-experience').replaceChildren(...profile.experience.map(job=>{
-      const entry=element('article','resume-entry');const header=element('header','resume-entry-heading');const title=element('h4');setBilingualText(title,job.company,job.companyZh===job.company?null:job.companyZh);
-      const period=element('p','resume-period',job.period);if(job.periodZh&&job.periodZh!==job.period)appendChinese(period,job.periodZh);
-      header.append(title,period);const role=element('p','resume-role');setBilingualText(role,job.role,job.roleZh);
+      const entry=element('article','resume-entry');const header=element('header','resume-entry-heading');const title=element('h4');setProfileText(title,job.company,job.companyZh);
+      const period=element('p','resume-period');setProfileText(period,job.period,job.periodZh);
+      header.append(title,period);const role=element('p','resume-role');setProfileText(role,job.role,job.roleZh);
       const points=element('ul','resume-points');job.points.forEach(point=>{const li=element('li');li.append(profileParagraph(point));points.append(li);});
       entry.append(header,role,points);return entry;
     }));
     $('#profile-education').replaceChildren(...profile.education.map(education=>{
-      const entry=element('article','resume-entry education-entry');const header=element('header','resume-entry-heading');const title=element('h4');setBilingualText(title,education.school,education.schoolZh);header.append(title,element('p','resume-period',education.period));
-      const course=element('p','resume-role');setBilingualText(course,education.course,education.courseZh);entry.append(header,course);
-      if(education.note||education.noteZh){const note=element('p','education-note');setBilingualText(note,education.note,education.noteZh);entry.append(note);}return entry;
+      const entry=element('article','resume-entry education-entry');const header=element('header','resume-entry-heading');const title=element('h4');setProfileText(title,education.school,education.schoolZh);const period=element('p','resume-period');setProfileText(period,education.period,education.periodZh);header.append(title,period);
+      const course=element('p','resume-role');setProfileText(course,education.course,education.courseZh);entry.append(header,course);
+      if(education.note||education.noteZh){const note=element('p','education-note');setProfileText(note,education.note,education.noteZh);entry.append(note);}return entry;
     }));
-    $('#profile-skills').replaceChildren(...profile.skills.map(skill=>{const li=element('li');setBilingualText(li,skill.en,skill.zh);return li;}));
+    $('#profile-skills').replaceChildren(...profile.skills.map(skill=>{const li=element('li');setProfileText(li,skill.en,skill.zh);return li;}));
     $('#profile-tools').textContent=profile.tools.join(' · ');
     $('#profile-additional').replaceChildren(...profile.additional.map(item=>{const li=element('li');li.append(profileParagraph(item));return li;}));
   }

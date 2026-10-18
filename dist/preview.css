@@ -89,3 +89,43 @@ body{background:var(--paper)}
 @media(max-width:1000px){:root{--gutter:22px}.intro{padding:28px}.intro h1{font-size:6.2vw}.ip-series-grid{gap:16px}.ip-series-grid .project-meta>span:first-child{font-size:14px}.detail-heading p{font-size:14px}.series-heading{font-size:12px}}
 @media(max-width:700px){:root{--gutter:16px}.site-header{gap:14px;padding-top:17px;padding-bottom:15px}.wordmark{font-size:24px}.view-tab{font-size:11px;padding:9px 13px}.view-tab span{display:inline}.intro{margin:18px 0 32px;padding:26px 20px 20px;border-radius:16px}.intro h1{font-size:clamp(33px,7.4vw,50px);letter-spacing:-.06em;line-height:1.1;-webkit-text-stroke:.8px var(--ink);text-shadow:2px 2px 0 var(--ink)}.intro-caption{flex-direction:row;margin-top:22px;font-size:10px;gap:14px}.intro-caption>span:first-child{max-width:160px}.intro-caption br{display:block}.edition{font-size:9px}.series-heading{font-size:11px;gap:12px;letter-spacing:-.035em}.ip-series-grid{gap:20px}.ip-series-grid .project-meta>span:first-child{font-size:17px}.project-card{border-radius:12px}.project-action{background:var(--mint);border-radius:20px;font-size:11px}.project-meta{font-size:11px}.project-meta>span:first-child{font-size:15px}.playground-intro{align-items:flex-start;gap:18px}.playground-intro p{font-size:23px;margin:0}.playground-intro>span{font-size:9px;line-height:1.6;max-width:125px;text-align:right}.detail-toolbar{font-size:9px}.detail-heading,.has-case-study .detail-heading{padding:34px 0 28px}.detail-heading h2,.has-case-study .detail-heading h2{font-size:clamp(32px,9vw,48px);max-width:100%}.detail-heading p{font-size:14px}.case-study-row{padding:21px 18px;gap:20px}.case-study-columns{gap:22px}.case-study-copy{font-size:13px}.case-study-copy:lang(zh-CN){font-size:14px}.case-study-label .translation-zh{font-size:12px}.next-project{padding:22px}.end-note{padding:48px 20px;margin:20px 0 32px}.end-note h2{font-size:34px}.floating-bio{max-width:calc(100% - 28px);font-size:9px}.about-dialog{border-radius:14px}.profile-identity h2{font-size:44px}.site-footer{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.project-card{transition:none}}
+/* Biography: Chinese leads, English provides a quieter second reading. */
+.about-dialog .profile-primary{display:block;font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;letter-spacing:0;color:#f6f5ff}
+.about-dialog .profile-secondary{display:block;margin-top:7px;font-family:var(--sans);font-weight:400;letter-spacing:0;color:#bdb7ce;line-height:1.65}
+.about-top>span{font:14px/1.5 "PingFang SC","Microsoft YaHei",sans-serif}
+.about-top .about-label-en{font:11px/1.5 var(--mono);color:#bdb7ce}
+.about-top .close-button{gap:12px}
+.about-top .close-button>span[lang]{font-size:12px;line-height:1.4}
+.about-top .close-button>.about-label-en{font-size:10px}
+.profile-role .profile-primary{font-size:17px;line-height:1.8;font-weight:500;text-wrap:balance}
+.profile-role .profile-secondary{font-size:13px;line-height:1.65;margin-top:9px}
+.profile-summary-copy p.profile-primary{font-size:22px;line-height:1.85;font-weight:400;margin:0;color:#f6f5ff;text-wrap:balance}
+.profile-summary-copy p.profile-secondary{font-size:14px;line-height:1.8;margin:22px 0 0;color:#bdb7ce}
+.profile-contact-label .profile-primary,.profile-contact-label .profile-secondary{display:inline;font-size:11px;margin:0}
+.profile-contact-label .profile-secondary{font-family:var(--mono);font-size:10px}
+.resume-section>h3 .profile-primary,.profile-tools>h4 .profile-primary{font-size:17px;line-height:1.6;font-weight:500;color:var(--mint)}
+.resume-section>h3 .profile-secondary,.profile-tools>h4 .profile-secondary{font:11px/1.6 var(--mono);margin-top:6px;color:#bdb7ce}
+.resume-entry-heading h4 .profile-primary{font-size:25px;line-height:1.45;font-weight:500;color:#d5ceff}
+.resume-entry-heading h4 .profile-secondary{font-size:14px;line-height:1.6;margin-top:5px}
+.resume-period .profile-primary{font-size:12px;line-height:1.7;color:#e0dbee}
+.resume-period .profile-secondary{font:10px/1.6 var(--mono);margin-top:4px}
+.resume-role .profile-primary{font-size:16px;line-height:1.65;color:var(--mint)}
+.resume-role .profile-secondary{font-size:12px;line-height:1.7;margin-top:4px}
+.resume-copy p.profile-primary{font-size:16px;line-height:1.9;margin:0;color:#efedf8}
+.resume-copy p.profile-secondary{font-size:13px;line-height:1.75;margin:9px 0 0;color:#bdb7ce}
+.resume-points li+li{margin-top:22px}
+.education-note .profile-primary{font-size:14px;line-height:1.8;color:#efedf8}
+.education-note .profile-secondary{font-size:12px;line-height:1.7;margin-top:5px}
+.profile-skills .profile-primary{font-size:16px;line-height:1.65}
+.profile-skills .profile-secondary{font-size:12px;line-height:1.65;margin-top:6px}
+@media(max-width:700px){
+  .profile-summary-copy p.profile-primary{font-size:19px;line-height:1.9}
+  .profile-summary-copy p.profile-secondary{font-size:13px;line-height:1.75;margin-top:18px}
+  .profile-role .profile-primary{font-size:16px}
+  .profile-role .profile-secondary{font-size:12px}
+  .resume-entry-heading h4 .profile-primary{font-size:22px}
+  .resume-entry-heading h4 .profile-secondary{font-size:13px}
+  .resume-copy p.profile-primary{font-size:15px;line-height:1.9}
+  .resume-copy p.profile-secondary{font-size:12px;line-height:1.8}
+  .about-top .close-button{gap:8px}
+}
