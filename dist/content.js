@@ -31,6 +31,7 @@ window.portfolioContent = {
       {
         "company": "JD Miaosong",
         "companyZh": "京东秒送",
+        "logo": {"src": "assets/profile-logos/jd.png", "variant": "brand"},
         "role": "Creative Designer",
         "roleZh": "创意设计师",
         "period": "Feb 2026 — Present",
@@ -57,6 +58,7 @@ window.portfolioContent = {
       {
         "company": "SHEGLAM",
         "companyZh": "SHEGLAM",
+        "logo": {"src": "assets/profile-logos/sheglam.jpg", "variant": "brand"},
         "role": "Creative Designer",
         "roleZh": "创意设计师",
         "period": "Jul 2021 — Jan 2026",
@@ -71,6 +73,7 @@ window.portfolioContent = {
             "en": "Product and channel visuals: Designed product detail pages and launch visuals for Sun Beam Matte Liquid Bronzer across the SHEIN app, the SHEGLAM website and Amazon, and independently built Amazon storefront visuals. The product won Best Liquid Bronzer at the 2025 NewBeauty Beauty Awards."
           },
           {
+            "logo": {"src": "assets/profile-logos/sheglam-hair.jpg", "variant": "wordmark"},
             "zh": "商详体系：从 0 到 1 搭建 SHEGLAM Hair 新品商详，沉淀持续沿用的模板与视觉体系；独立负责 SHEGLAM 多个商品品类的详情页设计。",
             "en": "Product detail systems: Built SHEGLAM Hair launch product pages from the ground up, establishing templates and a visual system that remained in use. Independently designed product detail pages across multiple SHEGLAM categories."
           },
@@ -83,6 +86,7 @@ window.portfolioContent = {
       {
         "company": "A. O. Smith (China), Nanjing",
         "companyZh": "南京 A.O. 史密斯（中国）",
+        "logo": {"src": "assets/profile-logos/ao-smith.png", "variant": "wordmark"},
         "role": "Visual Designer",
         "roleZh": "视觉设计师",
         "period": "Jun 2017 — Sep 2017",
@@ -101,6 +105,7 @@ window.portfolioContent = {
         "schoolZh": "南京理工大学",
         "course": "Master’s · Visual Communication Design",
         "courseZh": "视觉传达设计 · 硕士",
+        "logo": {"src": "assets/profile-logos/njust.jpg", "variant": "seal"},
         "period": "2018.09 — 2021.03",
         "note": "",
         "noteZh": ""
@@ -110,6 +115,7 @@ window.portfolioContent = {
         "schoolZh": "南京理工大学",
         "course": "Bachelor’s · Visual Communication Design",
         "courseZh": "视觉传达设计 · 本科",
+        "logo": {"src": "assets/profile-logos/njust.jpg", "variant": "seal"},
         "period": "2014.09 — 2018.07",
         "note": "Recommended for postgraduate admission at the same university without an entrance examination.",
         "noteZh": "保送本校硕士研究生。"
@@ -117,6 +123,7 @@ window.portfolioContent = {
       {
         "school": "National Yunlin University of Science and Technology",
         "schoolZh": "台湾云林科技大学",
+        "logo": {"src": "assets/profile-logos/yuntech.jpg", "variant": "seal"},
         "course": "Exchange · Visual Communication Design",
         "courseZh": "视觉传达设计 · 交换生",
         "period": "2016.09 — 2017.02",

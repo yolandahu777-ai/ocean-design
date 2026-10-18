@@ -17,9 +17,19 @@
   }
   function profileParagraph(copy,className='resume-copy'){
     const block=element('div',className);
+    if(copy.logo)block.append(profileLogo(copy.logo,'resume-point-logo'));
     if(copy.zh){const zh=element('p','profile-primary',copy.zh);zh.lang='zh-CN';block.append(zh);}
     if(copy.en&&copy.en!==copy.zh){const en=element('p',copy.zh?'profile-secondary':'profile-primary',copy.en);en.lang='en';block.append(en);}
     return block;
+  }
+  function profileLogo(logo,className='resume-logo'){
+    const frame=element('span',`${className} logo-${logo.variant||'brand'}`);frame.setAttribute('aria-hidden','true');
+    const img=element('img');img.src=logo.src;img.alt='';img.width=56;img.height=56;img.decoding='async';
+    frame.append(img);return frame;
+  }
+  function profileHeading(english,chinese,logo){
+    const identity=element('div','resume-identity');const title=element('h4');setProfileText(title,english,chinese);
+    if(logo)identity.append(profileLogo(logo));identity.append(title);return identity;
   }
   function renderProfile(){
     const profile=content.profile;
@@ -34,14 +44,14 @@
       link.append(label,element('span','profile-contact-value',contact.value));contacts.append(link);
     });
     $('#profile-experience').replaceChildren(...profile.experience.map(job=>{
-      const entry=element('article','resume-entry');const header=element('header','resume-entry-heading');const title=element('h4');setProfileText(title,job.company,job.companyZh);
+      const entry=element('article','resume-entry');const header=element('header','resume-entry-heading');const title=profileHeading(job.company,job.companyZh,job.logo);
       const period=element('p','resume-period');setProfileText(period,job.period,job.periodZh);
       header.append(title,period);const role=element('p','resume-role');setProfileText(role,job.role,job.roleZh);
       const points=element('ul','resume-points');job.points.forEach(point=>{const li=element('li');li.append(profileParagraph(point));points.append(li);});
       entry.append(header,role,points);return entry;
     }));
     $('#profile-education').replaceChildren(...profile.education.map(education=>{
-      const entry=element('article','resume-entry education-entry');const header=element('header','resume-entry-heading');const title=element('h4');setProfileText(title,education.school,education.schoolZh);const period=element('p','resume-period');setProfileText(period,education.period,education.periodZh);header.append(title,period);
+      const entry=element('article','resume-entry education-entry');const header=element('header','resume-entry-heading');const title=profileHeading(education.school,education.schoolZh,education.logo);const period=element('p','resume-period');setProfileText(period,education.period,education.periodZh);header.append(title,period);
       const course=element('p','resume-role');setProfileText(course,education.course,education.courseZh);entry.append(header,course);
       if(education.note||education.noteZh){const note=element('p','education-note');setProfileText(note,education.note,education.noteZh);entry.append(note);}return entry;
     }));
