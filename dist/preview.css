@@ -97,7 +97,7 @@ body{background:var(--paper)}
 .about-top .close-button{gap:12px}
 .about-top .close-button>span[lang]{font-size:12px;line-height:1.4}
 .about-top .close-button>.about-label-en{font-size:10px}
-.profile-role .profile-primary{font-size:17px;line-height:1.8;font-weight:500;text-wrap:balance}
+.profile-role .profile-primary{font-size:17px;line-height:1.8;font-weight:500;text-wrap:balance;word-break:keep-all}
 .profile-role .profile-secondary{font-size:13px;line-height:1.65;margin-top:9px}
 .profile-summary-copy p.profile-primary{font-size:22px;line-height:1.85;font-weight:400;margin:0;color:#f6f5ff;text-wrap:balance}
 .profile-summary-copy p.profile-secondary{font-size:14px;line-height:1.8;margin:22px 0 0;color:#bdb7ce}
