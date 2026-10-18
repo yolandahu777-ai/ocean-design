@@ -60,8 +60,8 @@ window.portfolioContent = {
         "companyZh": "SHEIN",
         "companyNote": {"zh": "SHEGLAM · SHEIN 旗下美妆品牌", "en": "SHEGLAM · SHEIN’s beauty brand"},
         "logo": {"src": "assets/profile-logos/shein.svg", "variant": "brand"},
-        "role": "Creative Designer",
-        "roleZh": "创意设计师",
+        "role": "Senior Visual Designer",
+        "roleZh": "高级视觉设计师",
         "period": "Jul 2021 — Jan 2026",
         "periodZh": "2021.07 — 2026.01",
         "points": [
