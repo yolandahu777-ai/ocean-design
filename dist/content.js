@@ -29,8 +29,8 @@ window.portfolioContent = {
     },
     "experience": [
       {
-        "company": "JD Five Star · JD Miaosong",
-        "companyZh": "京东五星电器 · 京东秒送",
+        "company": "JD Miaosong",
+        "companyZh": "京东秒送",
         "role": "Creative Designer",
         "roleZh": "创意设计师",
         "period": "Feb 2026 — Present",
