@@ -129,6 +129,19 @@ body{background:var(--paper)}
   .resume-copy p.profile-secondary{font-size:12px;line-height:1.8}
   .about-top .close-button{gap:8px}
 }
+/* Biography: compact location and grouped skill descriptions. */
+.profile-location{margin:18px 0 0}
+.profile-location .profile-primary{display:inline;font-size:13px;line-height:1.7;color:#e0dbee}
+.profile-location .profile-secondary{display:inline;margin:0 0 0 10px;font-size:12px;line-height:1.7}
+.profile-skills{grid-template-columns:minmax(0,1fr);gap:28px}
+.profile-skill+.profile-skill{border-top:1px solid #55506a;padding-top:28px}
+.profile-skill-title{margin:0 0 14px;font-weight:500}
+.profile-skill-title .profile-primary{font-size:18px;line-height:1.6;color:#d5ceff}
+.profile-skill-title .profile-secondary{font-size:12px;line-height:1.6;margin-top:4px}
+.skill-details{list-style:none;padding:0 0 0 18px;margin:20px 0 0;border-left:1px solid #55506a}
+.skill-details li+li{margin-top:16px}
+.skill-details .resume-copy p.profile-primary{font-size:14px;line-height:1.85}
+.skill-details .resume-copy p.profile-secondary{font-size:12px;line-height:1.75;margin-top:6px}
 /* Bilingual homepage introduction: preserve the English display headline. */
 .intro-headline-zh{margin:18px 0 0;font:500 22px/1.6 "PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;letter-spacing:.06em;color:var(--ink)}
 .intro-expertise-zh{display:block;margin-top:7px;font:400 13px/1.7 "PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;letter-spacing:0;color:var(--ink);text-wrap:balance}

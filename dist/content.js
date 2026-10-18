@@ -14,69 +14,69 @@ window.portfolioContent = {
     "expertiseZh": "数字设计、营销视觉与印刷设计。",
     "nameZh": "胡海洋",
     "role": {
-      "en": "Senior Visual Designer / Marketing Design / AI Content Creation",
-      "zh": "高级视觉设计师 / 营销设计 / AI 内容制作"
+      "en": "Creative Designer / Marketing Design / AI Content Creation",
+      "zh": "创意设计师 / 营销设计 / AI 内容制作"
     },
     "summary": {
-      "en": "Visual designer with 5+ years of experience across beauty, consumer electronics and home appliances. Translates product features and consumer contexts into marketing visuals, with experience in AI short-video production and cross-functional project delivery.",
-      "zh": "拥有 5 年以上视觉设计经验，覆盖美妆、3C 与家电品类。擅长将商品卖点与消费场景转化为营销视觉，具备 AI 短视频制作及跨团队项目落地经验。"
+      "en": "Creative designer with 5+ years of experience across beauty, consumer electronics and home appliances. Focused on e-commerce and marketing visuals, translating product stories and IP identities into consistent designs across channels. Builds reusable design systems and AI video workflows, with experience in cross-team delivery and intern mentoring.",
+      "zh": "拥有 5 年以上视觉设计经验，覆盖美妆、3C 与家电品类。专注电商与营销视觉，将商品卖点和 IP 特征转化为统一的多渠道设计；注重商详体系与 AI 视频流程沉淀，具备跨团队交付与实习生带教经验。"
     },
-    "description": "Visual designer with 5+ years of experience across beauty, consumer electronics and home appliances. Translates product features and consumer contexts into marketing visuals, with experience in AI short-video production and cross-functional project delivery.",
-    "secondary": "Selected work includes product storytelling for SHEGLAM and a brand and packaging concept for NTR8, alongside AI image studies and photography.",
+    "description": "Creative designer with 5+ years of experience across beauty, consumer electronics and home appliances. Focused on e-commerce and marketing visuals, translating product stories and IP identities into consistent designs across channels. Builds reusable design systems and AI video workflows, with experience in cross-team delivery and intern mentoring.",
+    "secondary": "Selected work spans SHEGLAM IP collaborations and e-commerce visuals, JD Miaosong marketing and AI video content, and independent branding explorations.",
     "contacts": {
       "email": "1016539519@qq.com",
       "phone": "18602568522"
     },
     "experience": [
       {
-        "company": "JD Miaosong",
-        "companyZh": "京东秒送",
+        "company": "JD Five Star · JD Miaosong",
+        "companyZh": "京东五星电器 · 京东秒送",
         "role": "Creative Designer",
         "roleZh": "创意设计师",
         "period": "Feb 2026 — Present",
         "periodZh": "2026.02 — 至今",
         "points": [
           {
-            "en": "Supports product imagery and marketing pages for consumer electronics and home appliances. From February to June 2026, optimized 6,886 product main images and supported a further 1,480 for the Hong Kong business; contributed to 32 marketing campaigns and storefront design initiatives, delivering 9 key campaign landing pages.",
-            "zh": "负责 3C 与家电商品视觉及营销页面。2026 年 2—6 月，优化秒送主图 6,886 张，另支持香港业务主图 1,480 张；支持 32 场营销活动及店铺装修，交付 9 个重点营销通天塔页面。"
+            "zh": "营销视觉：负责京东秒送 3C 与家电营销视觉设计。2026 年 2—6 月累计输出主图 6,886 张，支持 32 场营销活动。",
+            "en": "Marketing visuals: Designed consumer-electronics and home-appliance assets for JD Miaosong. From February to June 2026, delivered 6,886 product main images and supported 32 marketing campaigns."
           },
           {
-            "en": "Contributed to visual design and key-product merchandising for the summer cooling campaign. During the campaign, electric-fan GMV grew 133.5% over the previous period, with RMB 413,100 in incremental transaction value. Reviewed sales and incremental contributions from key SKUs to inform subsequent marketing work.",
-            "zh": "参与清凉节活动视觉与重点商品运营协同；活动期间风扇品类 GMV 环比增长 133.5%，新增成交 41.31 万元。分析重点 SKU 的成交与增量贡献，支持后续营销优化。"
+            "zh": "品类营销：负责风扇品类相关视觉设计，参与清凉节活动与重点商品运营协同；同期风扇品类 GMV 环比增长 133.5%，并复盘重点 SKU 的成交与增量贡献，支持后续营销优化。",
+            "en": "Category marketing: Designed fan-category visuals and collaborated on the summer cooling campaign and key-product merchandising. During the same period, fan-category GMV grew 133.5% versus the previous period. Reviewed sales and incremental contributions from key SKUs to inform subsequent marketing work."
           },
           {
-            "en": "Created 59-second, vertical 9:16 AI video content for seasonal marketing, adapted for WeChat Channels, short-video platforms and WeChat Moments. Documented workflows for storyboarding, AI asset generation and refinement, editing, voiceovers and channel adaptation to support store campaigns.",
-            "zh": "制作 59 秒、9:16 节日营销 AI 短视频，适配视频号、短视频平台与朋友圈。沉淀脚本分镜、AI 素材生成与修正、剪辑配音及渠道适配 SOP，配合店铺活动承接。"
+            "zh": "AI 视频流程：制作 59 秒、9:16 节日营销 AI 短视频，适配视频号、短视频平台与朋友圈；沉淀脚本分镜、AI 素材生成与修正、剪辑配音及渠道适配 SOP。",
+            "en": "AI video workflows: Created 59-second, vertical 9:16 seasonal marketing video content for WeChat Channels, short-video platforms and WeChat Moments. Documented a reusable workflow covering storyboarding, AI asset generation and refinement, editing, voiceovers and channel adaptation."
           },
           {
-            "en": "Supported Labor Day digital marketing with consumer-electronics and appliance visuals for audiences within 3 km of stores. Supported delivery of 100,000 SMS messages and 10,000 rich-media messages over 4 days, and coordinated marketing resources with Tiger, Dyson and Dreame.",
-            "zh": "配合五一活动数字营销，围绕门店 3 公里 LBS 人群制作 3C 与家电主题视觉，支持 4 天内投放 10 万条短信及 1 万条富媒体；协同虎牌、戴森、追觅等品牌营销资源。"
+            "zh": "大促项目（进行中）：负责京东秒送双 11 店招视觉，交付范围为 3C 与小家电各 4 种尺寸，共 8 张。",
+            "en": "Campaign in progress: Developing Double 11 storefront-header visuals for JD Miaosong, with a planned scope of 8 assets across 4 sizes each for consumer electronics and small home appliances."
           }
         ]
       },
       {
         "company": "SHEGLAM",
         "companyZh": "SHEGLAM",
-        "role": "Senior Visual Designer",
-        "roleZh": "高级视觉设计师",
+        "role": "Creative Designer",
+        "roleZh": "创意设计师",
         "period": "Jul 2021 — Jan 2026",
         "periodZh": "2021.07 — 2026.01",
         "points": [
-          {
-            "en": "Created brand and product visuals for SHEGLAM beauty, SHEGLAM HAIR haircare and electrical tools, and Slow Sunday skincare. Designed product detail pages, homepage key visuals, banners, icons and campaign pages.",
-            "zh": "负责 SHEGLAM 美妆、SHEGLAM HAIR 护发及电器、Slow Sunday 护肤产品视觉，完成商品详情页、首页 KV、Banner、ICON 及营销专题设计。"
-          },
           {
             "en": "IP collaboration design: Led launch visuals for Harley Quinn × SHEGLAM (Nov 2024), Adventure Time × SHEGLAM (Feb 2025), and The Matrix Resurrections × SHEGLAM (Jul 2025, in collaboration with Warner Bros.), covering key visuals, product detail pages, social assets, banners and EDM. The official Instagram launch posts received 145K, 148K and 55K likes respectively; the Matrix collection was featured by Billboard’s official website. Developed an IP-to-beauty visual translation methodology and refined it across all three projects.",
             "zh": "IP 联名设计：先后负责 Harley Quinn × SHEGLAM（2024.11）、Adventure Time × SHEGLAM（2025.02）、The Matrix Resurrections × SHEGLAM（2025.07，与 Warner Bros. 合作）三个联名系列新品首发视觉，覆盖 KV、商详、社媒图、banner 及 EDM；官方 IG 首发帖分别获 14.5 万、14.8 万、5.5 万点赞，其中 Matrix 系列获 Billboard 官网专题推荐；沉淀 IP 联名视觉转译方法并在三个项目中迭代复用。"
           },
           {
-            "en": "Adapted visual assets for the SHEIN app and desktop site, the SHEGLAM website, Amazon, Shopee, Instagram and TikTok, balancing brand consistency, platform specifications and online and offline collateral needs.",
-            "zh": "面向 SHEIN App 及 PC 端、SHEGLAM 独立站、Amazon、Shopee、Instagram、TikTok 等平台输出视觉，兼顾品牌调性、平台规范与线上线下物料需求。"
+            "zh": "单品与渠道视觉：负责 Sun Beam Matte Liquid Bronzer（哑光液体古铜修容）的商品详情页与新品首发视觉，覆盖 SHEIN App、SHEGLAM 独立站与 Amazon；独立搭建 Amazon 店铺视觉。该产品获 2025 NewBeauty Beauty Awards「Best Liquid Bronzer」奖项。",
+            "en": "Product and channel visuals: Designed product detail pages and launch visuals for Sun Beam Matte Liquid Bronzer across the SHEIN app, the SHEGLAM website and Amazon, and independently built Amazon storefront visuals. The product won Best Liquid Bronzer at the 2025 NewBeauty Beauty Awards."
           },
           {
-            "en": "Independently delivered campaign and day-to-day marketing assets, tracking project progress and delivery quality to keep design launches on schedule.",
-            "zh": "独立完成营销及日常运营物料，跟踪项目进度与交付质量，保障设计按时上线。"
+            "zh": "商详体系：从 0 到 1 搭建 SHEGLAM Hair 新品商详，沉淀持续沿用的模板与视觉体系；独立负责 SHEGLAM 多个商品品类的详情页设计。",
+            "en": "Product detail systems: Built SHEGLAM Hair launch product pages from the ground up, establishing templates and a visual system that remained in use. Independently designed product detail pages across multiple SHEGLAM categories."
+          },
+          {
+            "zh": "实习生带教：分配基础设计任务，制定图片尺寸与输出规范，负责设计走查与修改指导。",
+            "en": "Intern mentoring: Assigned foundational design tasks, established image-size and export specifications, and reviewed work with guidance on revisions."
           }
         ]
       },
@@ -126,36 +126,50 @@ window.portfolioContent = {
     ],
     "skills": [
       {
-        "en": "Brand logos & visual identity systems",
-        "zh": "品牌 LOGO 与 VIS"
+        "titleZh": "视觉设计",
+        "title": "Visual design",
+        "description": {
+          "zh": "电商视觉、营销专题、品牌 LOGO 与 VIS、网页设计、字体与插画、摄影。",
+          "en": "E-commerce visuals, marketing campaign pages, brand logos and visual identity systems, web design, typography, illustration and photography."
+        }
       },
       {
-        "en": "E-commerce & marketing visuals",
-        "zh": "电商营销视觉"
+        "titleZh": "AI 与内容制作",
+        "title": "AI & content creation",
+        "description": {
+          "zh": "将 AI 图像生成、视频制作与剪辑衔接为可复用流程，沉淀 AI 视频制作 SOP。",
+          "en": "Connects AI image generation, video production and editing into reusable workflows, with documented procedures for AI video creation."
+        },
+        "details": [
+          {
+            "zh": "图像生成：Midjourney、即梦、GPT-4o 图像生成、灵境（京东云 AIGC 平台）。",
+            "en": "Image tools: Midjourney, Jimeng, GPT-4o image generation and Lingjing, JD Cloud’s AIGC platform."
+          },
+          {
+            "zh": "视频制作与剪辑：灵境（聚合可灵、Vidu 等多模型）、即梦、剪映。",
+            "en": "Video tools: Lingjing, which brings together models including Kling and Vidu; Jimeng; and Jianying for editing."
+          },
+          {
+            "zh": "AI 设计：Lovart。",
+            "en": "AI design: Lovart."
+          }
+        ]
       },
       {
-        "en": "Web design",
-        "zh": "网页设计"
-      },
-      {
-        "en": "Typography & illustration",
-        "zh": "字体与插画"
-      },
-      {
-        "en": "Photography",
-        "zh": "摄影"
-      },
-      {
-        "en": "AI content creation",
-        "zh": "AI 内容制作"
+        "titleZh": "协作与交付",
+        "title": "Collaboration & delivery",
+        "description": {
+          "zh": "需求沟通、跨团队协作、项目进度与交付管理。",
+          "en": "Requirements communication, cross-functional collaboration, project scheduling and delivery management."
+        }
       }
     ],
     "tools": [
       "Photoshop",
       "Illustrator",
+      "Figma",
       "Sketch",
-      "Lightroom",
-      "AIGC"
+      "Lightroom"
     ],
     "additional": [
       {
@@ -166,7 +180,11 @@ window.portfolioContent = {
         "en": "Cultural and creative illustration for Aurora Museum (2016).",
         "zh": "震旦博物馆文创插画（2016）。"
       }
-    ]
+    ],
+    "location": {
+      "zh": "南京",
+      "en": "Nanjing, China"
+    }
   },
   projects: [
     {
