@@ -166,6 +166,17 @@
         if(item.aspectRatio){
           figure.classList.add('is-cropped');figure.style.setProperty('--media-ratio',item.aspectRatio);
           image.style.objectPosition=item.position||'center';
+          if(item.visibleBounds){
+            // Fit the visible artwork, excluding transparent export gutters.
+            const bounds=item.visibleBounds,ratio=item.aspectRatio;
+            const scale=Math.max(ratio/bounds.width,1/bounds.height);
+            const width=bounds.sourceWidth*scale/ratio*100;
+            const height=bounds.sourceHeight*scale*100;
+            image.style.width=`${width}%`;image.style.height=`${height}%`;
+            image.style.left=`${(1-bounds.width*scale/ratio)*50-bounds.x*scale/ratio*100}%`;
+            image.style.top=`${(1-bounds.height*scale)*50-bounds.y*scale*100}%`;
+            image.style.maxWidth='none';image.style.objectFit='fill';
+          }
         }
         figure.append(image);group.append(figure);
       });

@@ -692,7 +692,8 @@ window.portfolioContent = {
          {
            "src": "assets/buttery-refresh/cherry-shades.png",
            "alt": "Buttery Bliss blush shades with cherries, swatches and a red cream texture",
-           "aspectRatio": 0.75
+           "aspectRatio": 0.75,
+           "visibleBounds": {"x": 0, "y": 0, "width": 737, "height": 982, "sourceWidth": 737, "sourceHeight": 1015}
          }
        ],
        [
@@ -725,7 +726,8 @@ window.portfolioContent = {
          {
            "src": "assets/buttery-refresh/butter-tray.png",
            "alt": "Buttery Bliss blush sticks arranged with butter on silver trays",
-           "aspectRatio": 0.8
+           "aspectRatio": 0.8,
+           "visibleBounds": {"x": 37, "y": 9, "width": 947, "height": 1686, "sourceWidth": 994, "sourceHeight": 1695}
          },
          {
            "src": "assets/buttery-refresh/customize-look.jpg",
