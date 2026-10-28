@@ -242,31 +242,28 @@ window.portfolioGallery = {
     "summaryZh": "以轻盈的粉色语言，呈现腮红系列的色彩、质地与上妆效果。",
     "items": [
       {
-        "src": "assets/work/buttery-bliss-cover-1.webp",
-        "alt": "Buttery Bliss blush hero image with creamy texture",
+        "src": "assets/buttery-refresh/hero-strawberry.jpg",
+        "alt": "Buttery Bliss blush stick with strawberries and cream on a pink campaign banner",
+        "width": 1774,
+        "height": 887,
         "fit": "contain",
-        "position": "center",
-        "aspectRatio": 0.78,
-        "width": 1080,
-        "height": 1439
+        "position": "center"
       },
       {
-        "src": "assets/gallery/buttery-shades.webp",
-        "alt": "Buttery Bliss blush shades and product lineup",
+        "src": "assets/buttery-refresh/model-black-hair.png",
+        "alt": "Buttery Bliss blush campaign with a black-haired model and pink cheek finish",
+        "width": 725,
+        "height": 966,
         "fit": "contain",
-        "position": "center",
-        "aspectRatio": 0.78,
-        "width": 937,
-        "height": 1249
+        "position": "center"
       },
       {
-        "src": "assets/gallery/buttery-model.webp",
-        "alt": "Model wearing pink Buttery Bliss blush",
+        "src": "assets/buttery-refresh/butter-plate.jpg",
+        "alt": "Pink Buttery Bliss blush stick beside butter on a silver plate",
+        "width": 723,
+        "height": 964,
         "fit": "contain",
-        "position": "center",
-        "aspectRatio": 0.78,
-        "width": 937,
-        "height": 1249
+        "position": "center"
       }
     ]
   },

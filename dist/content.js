@@ -650,11 +650,95 @@ window.portfolioContent = {
       ]}]
     },
     {
-      id:'buttery-bliss', name:'Buttery Bliss', client:'SHEGLAM', section:'work',
+      id:'buttery-bliss', name:'Buttery Bliss', client:'SHEGLAM', section:'work', pinned:true,
       subtitle:'A fresh take on blush, from shade to finish.', category:'Beauty e-commerce', discipline:'Product detail design, product storytelling',
       subtitleZh:'从色彩到妆效，呈现腮红的新鲜表达。', categoryZh:'美妆电商', disciplineZh:'产品详情设计、产品视觉叙事',
-      cover:['assets/work/buttery-bliss-cover-1.webp','assets/work/buttery-bliss-cover-2.webp'], coverBackground:'#f4d6e0',
-      images:[{src:'assets/work/page-02.webp',alt:'SHEGLAM Buttery Bliss blush product visuals, shade chart and model applications in pink layouts'}],
+      cover:["assets/buttery-refresh/hero-strawberry.jpg", "assets/buttery-refresh/model-black-hair.png"], coverBackground:'#f4d6e0',
+      images:[{"src": "assets/buttery-refresh/hero-strawberry.jpg", "alt": "Buttery Bliss blush stick with strawberries and cream on a pink campaign banner"}],
+      editorialRows:[
+       [
+         {
+           "src": "assets/buttery-refresh/hero-strawberry.jpg",
+           "alt": "Buttery Bliss blush stick with strawberries and cream on a pink campaign banner"
+         }
+       ],
+       [
+         {
+           "src": "assets/buttery-refresh/model-black-hair.png",
+           "alt": "Buttery Bliss blush campaign with a black-haired model and pink cheek finish"
+         },
+         {
+           "src": "assets/buttery-refresh/butter-plate.jpg",
+           "alt": "Pink Buttery Bliss blush stick beside butter on a silver plate"
+         }
+       ],
+       [
+         {
+           "src": "assets/buttery-refresh/shade-product.jpg",
+           "alt": "Buttery Bliss blush product range and shade lineup"
+         },
+         {
+           "src": "assets/buttery-refresh/red-texture.jpg",
+           "alt": "Rich red blush texture spread with a silver butter knife",
+           "aspectRatio": 1,
+           "position": "center bottom"
+         }
+       ],
+       [
+         {
+           "src": "assets/buttery-refresh/shade-models.jpg",
+           "alt": "Buttery Bliss shade chart showing Cherry Pick, Guava Juice, Love Cake, Mulled Wine and Rose Ritual"
+         },
+         {
+           "src": "assets/buttery-refresh/cherry-shades.png",
+           "alt": "Buttery Bliss blush shades with cherries, swatches and a red cream texture",
+           "aspectRatio": 0.75
+         }
+       ],
+       [
+         {
+           "src": "assets/buttery-refresh/hero-melting-butter.jpg",
+           "alt": "Buttery Bliss blush stick beside melting butter with the campaign line Be careful, the blush may melt due to heat"
+         }
+       ],
+       [
+         {
+           "src": "assets/buttery-refresh/strawberry-portrait.jpg",
+           "alt": "Buttery Bliss blush stick with a strawberry on cream, portrait campaign visual"
+         },
+         {
+           "src": "assets/buttery-refresh/mix-shades.jpg",
+           "alt": "Mix Your Cream Cheeks guide to combining Buttery Bliss blush shades"
+         }
+       ],
+       [
+         {
+           "src": "assets/buttery-refresh/model-smile.png",
+           "alt": "Smiling model with pink blush beside a bowl of butter"
+         },
+         {
+           "src": "assets/buttery-refresh/butter-product.jpg",
+           "alt": "Rose Ritual Buttery Bliss blush stick resting on butter"
+         }
+       ],
+       [
+         {
+           "src": "assets/buttery-refresh/butter-tray.png",
+           "alt": "Buttery Bliss blush sticks arranged with butter on silver trays",
+           "aspectRatio": 0.8
+         },
+         {
+           "src": "assets/buttery-refresh/customize-look.jpg",
+           "alt": "Customize Your Blush Look guide showing Guava Juice and Rose Ritual before and after"
+         }
+       ],
+       [
+         {
+           "src": "assets/buttery-refresh/branded-butter.png",
+           "alt": "Close-up of butter printed with the SHEGLAM Buttery Bliss brand lettering"
+         }
+       ]
+     ],
       description:'Product detail visuals for SHEGLAM’s Buttery Bliss blush collection. Pink compositions, shade comparisons, product textures and model applications guide shoppers through the collection.',
       descriptionZh:'为 SHEGLAM 的 Buttery Bliss 腮红系列设计的产品详情视觉。以粉色构图串联色号对比、产品质地与模特上妆展示，帮助浏览者了解系列的色彩与妆效。',
       sourcePages:[2]
